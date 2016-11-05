@@ -1,5 +1,9 @@
 class Task
 
+  def initialize
+    @done = false
+  end
+
   def title
     @title
   end
@@ -15,5 +19,18 @@ class Task
   def description
     @description
   end
+
+  def done?
+    @done
+  end
+
+  def is_done
+    if @done == false
+      @done = true
+    elsif @done == true
+      @done = false
+    end
+  end
+
 
 end

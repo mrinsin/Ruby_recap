@@ -131,3 +131,28 @@ Story: As a developer, I can print an item for an anniversary with field labels 
 Story: As a developer with a TaskList with and without due dates and yearly recurring dates, I can list all the not completed items in order of due date and yearly dates for the current month.
 
 Story: As a developer with a TaskList with a collection of items with and without due dates and yearly recurring dates, I can list all the not completed items in order of due date and yearly dates for the current month, then the items without due dates.
+
+
+3.
+
+Ruby: Obstruction
+This is an exercise in Object Oriented Analysis.
+
+Obstruction
+
+We are deliberately not composing the stories for you in this challenge. Take some time to work out what objects are needed to create this game, then organize those objects, describe how those objects interact with each other and define the behavior of those objects.
+What are the classes needed (i.e. the nouns), what are the actions or methods needed (i.e. the verbs) and how do they relate to each other?
+
+Here's how the game works:
+
+The game is played on a grid by 2 people; 6 x 6 is a good size.
+Players take turns in marking squares on a grid.
+One player is 'O' and the other is 'X'.
+Players take turns in writing their symbol in a cell. The restriction is that you can only play in a cell if all its neighbors are empty.
+The first player unable to move loses.
+
+Here's a diagram to see how the game is played
+
+
+
+Click here to see an example of the game being played.

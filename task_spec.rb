@@ -23,5 +23,12 @@ describe Task do
     task1.description= "This is my first task"
     expect(task1.description).to eq "This is my first task"
   end
-  
+
+  #Story: As a developer, I can mark a Task done.
+  it "can be marked true or false for done" do
+    task1 = Task.new
+    task1.done?
+    expect(task1.done?).to eq false
+
+  end
 end
