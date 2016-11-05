@@ -1,0 +1,25 @@
+
+<!-- if the username varible exists -->
+<% if !@user_name.nil? %>
+<!-- say hello to the user -->
+  <h1> Hi <%= @user_name%> !</h1>
+<% end %>
+
+
+<p>
+  <%= flash.now[:notice] %>
+  <%= flash.now[:alert] %>
+  <!-- tells you whether the number was odd or even -->
+  Number was <%= params[:number] %>
+</p>
+
+<hr>
+
+<form action="answers.html" method="get">
+  Name:<br />
+  <input type="text" name="user_name" /><br />
+  Number:<br />
+  <input type="number" name="number" min='1' max='1000' required/><br />
+  <!-- required wont let you submit the form unless the field is filled -->
+  <input type="submit"value="Submit" />
+</form>
