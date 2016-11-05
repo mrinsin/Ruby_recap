@@ -60,6 +60,14 @@ class Toyota < Car
     "whoop"
   end
 
+  def accelerate
+    @speed = @speed.to_i + 7
+  end
+
+  def decelerate
+    @speed = @speed.to_i - 5
+  end
+
 end
 
 
@@ -77,10 +85,9 @@ class Tata < Car
     @speed = @speed.to_i + 2
   end
 
-
-    def decelerate
-      @speed = @speed.to_i - 1.25
-    end
+  def decelerate
+    @speed = @speed.to_i - 1.25
+  end
 
 end
 

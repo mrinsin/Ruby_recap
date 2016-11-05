@@ -86,6 +86,21 @@ describe Toyota do
     expect(new_car.horn).to eq "whoop"
   end
 
+  #Story: As a programmer, I can speed my Toyotas up by 7 km/h per acceleration.
+  it "can be accelerated by 7 Km/h in one go" do
+    new_car = Toyota.new(1993)
+    new_car.accelerate
+    expect(new_car.speed).to eq "7 Km/h"
+  end
+
+  #Story: As a programmer, I can slow my Tatas down by 5 km/h per braking.
+  it "can be decelerated by 5 Km/h in one go" do
+    new_car = Toyota.new(1993)
+    new_car.accelerate
+    new_car.decelerate
+    expect(new_car.speed).to eq "2 Km/h"
+  end
+
 end
 
 
