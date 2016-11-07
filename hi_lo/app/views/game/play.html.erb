@@ -1,0 +1,26 @@
+<h1>Welcome to the Hi/Lo Game!</h1>
+
+<h3>To get started, click on "Secret Number" so that the computer can randomly generate a winning number, between 1 and 50. </h3>
+<h3>Once the game is ready, you get 9 tries to guess the winning number. After each guess, you will be informed whether your guess was too high, too low or correct. Good luck!</h3>
+
+<hr>
+
+<h2>Click the button to generate a random winning number!
+  <form action="/game/start" method="post">
+    <input type="submit" value="Secret Number">
+  </form>
+</h2>
+
+<h2>Computer's guess :  <%= @game_start %> </h2>
+
+<br>
+
+<form action="/game/play" method="get">
+  Enter your guess:<br>
+  <input type="number" name="guess" /><br>
+  <input type="submit" value="Guess">
+</form>
+
+<h1>
+  <%= @answer%>
+</h1>
